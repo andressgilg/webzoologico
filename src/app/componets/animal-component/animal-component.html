@@ -1,0 +1,23 @@
+<!--INICIA TABLA-->
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of animalList; track item._id){
+      <tr>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.edad }}</td>
+        <td>{{ item.tipo }}</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>
+<!--TERMINA TABLA-->
